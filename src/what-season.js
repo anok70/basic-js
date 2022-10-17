@@ -15,7 +15,8 @@ function getSeason(date) {
   // throw new NotImplementedError('Not implemented');
   // remove line with error and write your code here
   if ((date instanceof Date === false || Object.getOwnPropertyNames(date).length > 0) 
-  && arguments.length > 0) {
+  && date) 
+  {
     throw new Error('Invalid date!');
 }
     if (date instanceof Date) {
